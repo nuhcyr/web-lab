@@ -21,23 +21,26 @@ function App() {
           <div className="hero-content">
             <h1 className="hero-title">Merhaba, Ben <span className="highlight">Nuh Çayır</span></h1>
             <p className="hero-subtitle">Modern ve Dinamik Frontend Geliştirici</p>
-            <div className="tech-stack">
-              <span className="tech-badge">HTML5</span>
-              <span className="tech-badge">CSS3</span>
-              <span className="tech-badge">JavaScript</span>
-              <span className="tech-badge">React</span>
-            </div>
+            
+            {/* Uygulama 5: Toolbar (Beceri Etiketleri) */}
+            <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+
             <a href="#projeler" className="cta-button">Projelerimi İncele</a>
           </div>
           <div className="hero-image-wrapper">
-            <div className="image-glow"></div>
             <img src="profil.jpg" alt="Nuh Çayır profil fotoğrafı" className="hero-image" />
           </div>
         </section>
 
         <section id="projeler" className="projects-section">
           <h2 className="section-title">Projelerim</h2>
-          <div className="projects-grid">
+          {/* Uygulama 6: Grid ile Proje Kartları */}
+          <div className="project-grid">
             <article className="project-card">
               <div className="project-image-box">
                 <img src="proje1.jpg" alt="E-Ticaret Sitesi ekran görüntüsü" />
@@ -45,7 +48,11 @@ function App() {
               <div className="project-info">
                 <h3>E-Ticaret Sitesi</h3>
                 <p>React ve Node.js kullanılarak geliştirilmiş tam kapsamlı e-ticaret uygulaması.</p>
-                <div className="tech-list">React • Node.js • Vercel</div>
+                <ul className="skill-tags">
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>Vercel</li>
+                </ul>
               </div>
             </article>
 
@@ -56,7 +63,11 @@ function App() {
               <div className="project-info">
                 <h3>Blog Uygulaması</h3>
                 <p>Kişisel yazılar için hazırlanmış modern blog sayfası.</p>
-                <div className="tech-list">HTML • CSS • JavaScript</div>
+                <ul className="skill-tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
               </div>
             </article>
           </div>
