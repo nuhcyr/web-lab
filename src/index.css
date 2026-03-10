@@ -1,7 +1,24 @@
-/* Genel sifirlama */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: system-ui, sans-serif; line-height: 1.6; }
+@import './styles/tokens.css';
 
+/* Genel sifirlama */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
 /* Skip link: normalde gizli, Tab ile gorunur */
 .skip-link {
   position: absolute;
